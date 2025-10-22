@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import sklearn as sk
+import sklearn
 
 rf_model = joblib.load("rf_model.joblib")
 scaler = joblib.load("scaler.joblib")
@@ -77,6 +77,7 @@ if st.button("🔮 Predict"):
         - Avoid distractions when possible.
         - Track your habits daily to stay productive!
         """)
+
 
 
 
