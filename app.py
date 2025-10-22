@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 rf_model = joblib.load("rf_model.joblib")
-scaler = joblib.load("models/scaler.joblib")
+scaler = joblib.load("scaler.joblib")
 
 feature_cols = [
     'sleep_hours', 'phone_usage_hours', 'caffeine_intake',
@@ -76,5 +76,6 @@ if st.button("🔮 Predict"):
         - Avoid distractions when possible.
         - Track your habits daily to stay productive!
         """)
+
 
 
