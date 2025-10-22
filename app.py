@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import joblib
 
-rf_model = joblib.load(r"C:\Users\amit nagar\OneDrive\Desktop\testingggg\models\rf_model.joblib")
-scaler = joblib.load(r"C:\Users\amit nagar\OneDrive\Desktop\testingggg\models\scaler.joblib")
+rf_model = joblib.load("models/rf_model.joblib")
+scaler = joblib.load("models/scaler.joblib")
 
 feature_cols = [
     'sleep_hours', 'phone_usage_hours', 'caffeine_intake',
@@ -76,3 +76,4 @@ if st.button("🔮 Predict"):
         - Avoid distractions when possible.
         - Track your habits daily to stay productive!
         """)
+
