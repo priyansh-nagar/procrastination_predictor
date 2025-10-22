@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-rf_model = joblib.load("models/rf_model.joblib")
+rf_model = joblib.load("rf_model.joblib")
 scaler = joblib.load("models/scaler.joblib")
 
 feature_cols = [
@@ -76,4 +76,5 @@ if st.button("🔮 Predict"):
         - Avoid distractions when possible.
         - Track your habits daily to stay productive!
         """)
+
 
